@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora topissima</title>
+</head>
+<body>
+    <input type="button" value="1" opt="1" id="1" onclick="clic(1)">
+    <input type="button" value="2" opt="2" id="2" onclick="clic(2)">
+    <input type="button" value="3" opt="2" id="2" onclick="clic(3)">
+    <input type="button" value="4" opt="2" id="2" onclick="clic(4)">
+    <input type="button" value="5" opt="2" id="2" onclick="clic(5)">
+    <input type="button" value="6" opt="2" id="2" onclick="clic(6)">
+    <input type="button" value="7" opt="2" id="2" onclick="clic(7)">
+    <input type="button" value="8" opt="2" id="2" onclick="clic(8)">
+    <input type="button" value="9" opt="2" id="2" onclick="clic(9)">
+    <input type="button" value="0" opt="2" id="2" onclick="clic(0)">
+    <input type="button" value="=" opt="2" id="2" onclick="calc()">
+  <div> 
+    <input type="button" value="+" opt="2" id="2" onclick="add()">
+    <input type="button" value="-" opt="2" id="2" onclick="clic(0)">
+    <input type="button" value="*" opt="2" id="2" onclick="clic(0)">
+    <input type="button" value="/" opt="2" id="2" onclick="clic(0)">
+  </div>
+  <div id="tela"> tela</div>
+    <script>
+  var tela = document.getElementById('tela');
+  
+  numeros=[]
+  function clic(n1){
+   for(var num = n1; num == n1; n1++){
+     numeros.push(num);
+     alert(numeros.map);
+    tela.innerText=numeros
+    
+   }
+  }
+  function add(){
+   //var tn = numeros.reduce((accumulador,item) => accumulador + item,0)
+   alert(converte);
+  }
+  
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+     /*aqui estamos stylizando o botão ver mais na sua forma original*/
+     .conteudo h1 span{   
+         font-size: 25px;
+         cursor: pointer;
+         color: crimson;
+     }
+     /*aqui estamos estilizando o paragrafo na sua forma opriginal*/
+     .conteudo p{
+         overflow: hidden; /*essa é a propriedade que faz sumir o texto*/
+         height: 2px;
+         transition: 1s;
+     }
+     .mostrar{
+         height: 200px !important;
+     }
+
+    </style>
+
+    <div class="conteudo">  <!--aqui damos inicio ao documento-->
+        <h1>Titulo do conteudo <span id="span"> ver mais</span></h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ipsa ratione blanditiis ullam. Numquam hic aliquid facere eaque aspernatur earum nulla veniam. In quod aliquid accusamus asperiores! Adipisci, sunt aliquam.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. In molestiae libero doloribus asperiores excepturi quos illum accusantium tenetur numquam beatae possimus, est modi iste quia sit similique eligendi aspernatur minus.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius harum porro non atque quod deleniti? Necessitatibus reiciendis possimus eaque magnam eligendi aliquam nobis. Nesciunt quisquam illum similique animi iure explicabo.
+        </p>
+    </div>
+    <script>
+
+        var span = document.getElementById("span");
+        //neste lista abaixo estamos fazendo o evento de clic funciona 
+        document.querySelector('.conteudo span').addEventListener('click',function(){
+
+          var conteudo = document.querySelector('.conteudo p'); // aqui estamos pegando o conteudo e armazenando numa variavel com o mesmo nome
+         if (conteudo.classList.contains('mostrar')) { //se exitir a classe"mostra" esconda 
+              conteudo.classList.remove('mostrar');
+              span.innerHTML = "ver mais"
+        } else {   // se não tiver mostre
+              conteudo.classList.add('mostrar');
+              span.innerHTML = "ver menos"
+        }
+           
+        });
+    </script>
+</body>
+</html>

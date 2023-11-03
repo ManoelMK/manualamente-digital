@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+         
+
+        .box{
+            width: 130px;
+            height: 130px;
+            background-color: aqua;
+            
+        }
+        .box1{
+            width: 130px;
+            height: 130px;
+            background-color: rgb(33, 172, 56);
+            
+        }
+        .box2{
+            text-align: center;
+            width: 130px;
+            height: 130px;
+            background-color: rgb(24, 26, 122);
+            
+            
+        }
+        .Esquerda{
+            transition: 20s;
+            background-color: rgb(246, 57, 57);
+            margin-left: 200px;
+        }
+        .baixo{
+            transition: 20s;
+            background-color: green;
+            line-height: 100px;
+        }
+    </style>
+    <div class="box" id="box" ></div>
+    <div class="box1" id="box1" ></div>
+    <div class="box2" id="box2" onclick="clic()"></div>
+    <script>
+        var box = document.getElementById('box');
+        var box1 = document.getElementById('box1');
+        var box2 = document.getElementById('box2');
+    
+        setTimeout(() => {
+           box.classList.add('Esquerda');
+        }, 1000);
+        setTimeout(() => {
+           box1.classList.add('Esquerda');
+        }, 1000);
+        function clic(){
+           box2.classList.add('baixo');
+        }
+
+
+    </script>
+</body>
+</html>

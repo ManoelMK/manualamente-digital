@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="linha1">
+    <input type="button" value="1" opt="1">
+    <input type="button" value="2" opt="2">
+    <input type="button" value="3" opt="3">
+    
+    <input type="button" value="4" opt="4">
+    <input type="button" value="5" opt="5">
+    <input type="button" value="5" opt="6">
+   
+    <input type="button" value="7" opt="7">
+    <input type="button" value="8" opt="8">
+    <input type="button" value="9" opt="9">
+  
+    </div>
+
+    <script>
+      
+      num=[]
+      var n1 = document.querySelectorAll('.linha1 input');
+      for(var i = 0;i <= n1.length; i++){
+         n1[i].addEventListener('click',function(t){
+          var n2 = t.target.getAttribute('opt');
+          alert(n2);  
+         })
+      }  
+        
+    </script>
+</body>
+</html>

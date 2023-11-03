@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+    .teste span{
+      cursor: pointer;
+      font-size: 40px ;
+      color: tomato;
+    }
+    .teste p{
+      overflow: hidden;
+      height: 0px;
+      transition: 3s;
+      color: fuchsia;
+    }
+    .mostrar{
+      height: 200px !important;
+      color: rgb(20, 255, 20) !important;
+    }
+  </style>
+  <div class="teste">
+    <h1>titulo do texto <span>clique</span></h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab repellendus praesentium inventore quisquam ducimus sunt, necessitatibus officiis dignissimos corporis doloribus deleniti a nobis beatae provident labore nam non ipsam ipsa!</p>
+  </div>
+
+  <script>
+     document.querySelector('.teste span').addEventListener('click',()=>{
+       var teste = document.querySelector('.teste p');
+       if (teste.classList.contains('mostrar')) {
+        teste.classList.remove('mostrar');
+       } else {
+         teste.classList.add('mostrar');
+       }
+     });
+  </script>
+</body>
+</html>

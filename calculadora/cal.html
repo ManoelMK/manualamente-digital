@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <input type="number" name="n1" id="n1"> +
+    <input type="number" name="n2" id="n2">
+    <input type="button" value="=" id="n3" onclick="cal()">
+    <div id="n4">Resultado</div>
+
+    <script>
+       function cal(){
+        const r1 = document.getElementById('n1')
+        const r2 = document.getElementById('n2')
+        const n4 = document.getElementById('n4')
+        const r3 = r1.valueAsNumber
+        const r4 = r2.valueAsNumber
+        const s = r3+r4
+        n4.innerText= s
+       }
+    </script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+            /*width: 700px;*/
+            background-color: #083540;
+            text-align: center;
+            color: white;
+            padding: 30px 0;
+            
+        }
+        .lista-cadastro{
+          
+            display: flex;
+            margin: 20px 0;
+            padding: 0 10px;
+            flex: 1;
+            height: 40px;
+            padding-left: 20px;
+        } 
+        
+        .lista-produtos-single{
+            padding: 10px 0;
+            margin: 15px 0;
+            border-bottom: 1px solid #ccc;
+            display: flex;
+
+        }
+        .lista-produtos-single h3{
+            flex: 1;
+            padding: 0 20px;
+        }
+        h3.price-produtos{
+            text-align: right;
+            font-size: 17px;
+        }
+        h3.price-produtos > span{
+            background-color: rgb(162, 149, 175);
+            padding: 8px 10px;
+            border-radius: 20px;
+            color: white;
+        }
+        .soma-produtos{
+            margin: 20px;
+        }
+        #limpar{
+            background-color: #131626;
+            color: white;
+            font-size: 20px;
+            width: max-content;
+            display: flex;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        #btn{
+          cursor: pointer;
+          background-color: rgba(88, 88, 88, 0.376);
+        }
+    </style>
+</head>
+<body style="background-color: #F2F2F2;">
+    <header>
+        <h2>LISTA DE SUPER MERCADO</h2>
+    </header>
+    <div class="lista-cadastro">
+        <input type="text" placeholder="nome do produto..." nome="nome_produto">
+        <input type="number" placeholder="quantidade..." nome="quantidade" step="0,01">
+        <input type="number" placeholder="valor..." nome="price" step="0,01">
+        <input type="submit" name="acao" value="cadastrar" id="btn">
+    </div>
+   
+
+         <div class="lista_produtos"></div>
+        
+        
+         <div class="soma-produtos">
+          <h1>Total: R$0,00</h1>
+        </div>
+
+        <button id="limpar">Limpar</button>
+        
+        <script src="super-mercado.js"></script>
+    </div>
+    <script src=""></script>
+</body>
+</html>

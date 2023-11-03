@@ -1,0 +1,85 @@
+body{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;
+    background-color:black;
+}
+header{
+    color: black;
+    text-align: center;
+}
+.d1{
+  width: 100px;
+  height: 100px;
+  background-color: rgb(245, 245, 245);
+  cursor: pointer;
+  text-align: center;
+  margin: 3px;
+  
+}
+.d2{
+  width: 100px;
+  height: 100px;
+  background-color: rgb(245, 245, 245);
+  cursor: pointer;
+  margin: 3px;
+ 
+  
+}
+.d3{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(245, 245, 245);
+    cursor: pointer;
+    margin: 3px;
+}
+.d4{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(245, 245, 245);
+    cursor: pointer;
+    margin: 3px;
+}
+.d5{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(245, 245, 245);
+    cursor: pointer;
+    margin: 3px;
+}
+.d6{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(245, 245, 245);
+    cursor: pointer;
+    margin: 3px;
+}
+.d7{
+    width: 100px;
+    height: 100px;
+    background-color:rgb(245, 245, 245);
+    cursor: pointer;
+    margin: 3px;
+}
+.d8{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(245, 245, 245);
+    cursor: pointer;
+    margin: 3px;
+}
+.d9{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(245, 245, 245);
+    cursor: pointer;
+    margin: 3px;
+}
+.d10{
+    background-color: green;
+}
+.d11{
+    background-color: red;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+    background-color: rgb(82, 78, 78);
+}
+     section{
+    color: red;
+    text-align: center;
+    font-size: 35px;
+}
+    </style>
+    
+</head>
+<body>
+    
+   <section>
+          <h1> trabalho solo </h1>
+       <div>
+          <input type="number" name="tx1" id="tx1">
+          <input type="button" value="adicionar" onclick="clic()">
+          <input type="button" value="mostrar" onclick="mostre()">
+          <input type="button" value="subtrair" onclick="tira()">
+           <div id="ta">
+           </div>
+       </div>
+   </section>
+
+   <script>
+       let r1 = document.getElementById('tx1')
+let n1 = document.getElementById('ta')
+let va =[]
+function clic(){
+    
+    let n2 = r1.valueAsNumber
+    add(n2.value)
+    va.push(n2)
+}
+
+function add(a1){
+   if (a1 == Number) {
+        return a1
+   }
+}
+
+function mostre(){
+    n1.innerHTML = va
+}
+function tira(){
+    va.length --;
+    n1.innerHTML = va
+}
+
+
+
+   </script>
+</body>
+</html> 
