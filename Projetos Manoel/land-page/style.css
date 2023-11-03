@@ -1,0 +1,20 @@
+
+*{
+    margin: 0%;
+}
+#menu-informativo{
+   position: relative;
+   display: grid;
+   grid-auto-flow: column;
+   background-color: rgba(75, 77, 77, 0.547);
+}
+a{
+    background-color: rgb(175, 180, 178);
+    margin:auto;
+    contain: content;
+    height: auto;
+    width: auto;
+    border:solid;
+}
+
+/*margin: 0% 0% 0% 20%;*/
