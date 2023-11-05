@@ -1,4 +1,5 @@
 
+
 #menu-informativo{
    position: relative;
    display: grid;
@@ -13,5 +14,32 @@ a{
     width: auto;
     border:solid;
 }
+.seção-video-texto{
+    
+    max-width:1913px;
+    height: 400px;
+}
+.video{
+    display: grid;
+    grid-auto-flow: column;
+    columns: auto;
+   width: 100%;
+   height: 100%;
+   padding-top: 56,25%;
+   position: relative;
+}
+.video iframe{
+   width: 100%;
+   height: 70%;
+   position: flex;
+   top: 0;
+   left: 0;
+   border-radius: 10px;
+}
+#texto{
+    margin: 20% 20% 20% 20%;
+    text-align: right;
 
-/*margin: 0% 0% 0% 20%;*/
+}
+
+/*margin: 0% 0% 0% 20%;  margin: 5% 0% 0% 0%;*/
